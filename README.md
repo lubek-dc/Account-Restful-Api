@@ -8,23 +8,25 @@
 ## Setup
 * First you need to clone repo via: 
 
-```py
-git clone  --recursive https://github.com/lubek-dc/Account-Restful-Api.git
-```
-* Then you create config.ini file in directory and type in
+` git clone  --recursive https://github.com/lubek-dc/Account-Restful-Api.git `
+* Then you need to create config.ini file in directory and type in
 
 ```ini
 [SECURITY]
 SECRET_KEY: Your Secret Key (Can be anything for example ThisIsSecret)
 ```
-* Next Step is Creating database to do it you must open command line inside repo folder and type:
 
-1.`$ py`
+## Creating database 
 
-2.`$ from app import db`
+* Open Repo in terminal or CMD
 
-3.`$ db.create_all()`
-* The last step is installing dependecies via: 
+* create data base via:
+    * `$ python` or `$ py `
+
+    * `>> from app import db`
+
+    * `>> db.create_all()`
+### The last step is installing dependecies via: 
 
 `
 $ pip install -r requirments.txt 
