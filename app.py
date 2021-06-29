@@ -13,6 +13,7 @@ from configparser import SafeConfigParser
 parser = SafeConfigParser()
 parser.read('config.ini')  # You must Create config.ini file in this same directory
 
+
 # config.ini file:
 # [SECURITY]
 # SECRET_KEY: <you can type here whatever you want for example ThisIsSecret but this will be easy to crack>
