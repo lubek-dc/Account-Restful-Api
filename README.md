@@ -1,5 +1,5 @@
 # Account-Restful-Api
-Dependencies:
+## Dependencies:
 * flask
 * flask_sqlalchemy
 * flask_marshmallow
@@ -12,7 +12,7 @@ Dependencies:
 * functools
 * configparser
 
-Installation:
+## Installation:
 Repo:
 ```git
 git clone https://github.com/lubek-dc/Account-Restful-Api
