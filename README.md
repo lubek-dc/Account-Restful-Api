@@ -11,12 +11,27 @@
 ```py
 git clone  --recursive https://github.com/lubek-dc/Account-Restful-Api.git
 ```
-* Then you need to install dependecies via: 
+* Then you create config.ini file in directory and type in
 
-```py
-pip install flask flask_sqlalchemy flask_marshmallow werkzeug uuid jwt datetime functools configparser 
+```ini
+[SECURITY]
+SECRET_KEY: Your Secret Key (Can be anything for example ThisIsSecret)
 ```
+* Next Step is Creating database to do it you must open command line inside repo folder and type:
 
+1.`$ py`
+
+2.`$ from app import db`
+
+3.`$ db.create_all()`
+* The last step is installing dependecies via: 
+
+`
+$ pip install -r requirments.txt 
+(cmd must be opened in the repo folder too)
+`
+
+And u are done to start programming
 # Dependencies:
 ## Main:
 * flask https://github.com/pallets/flask

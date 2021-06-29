@@ -1,14 +1,12 @@
-from flask import Flask, request, jsonify, make_response
-from flask_sqlalchemy import SQLAlchemy
-from flask_marshmallow import Marshmallow
-import os
-import json
-from werkzeug.security import generate_password_hash, check_password_hash
-import uuid
-import jwt
 import datetime
-from functools import wraps
+import os
+import uuid
 from configparser import SafeConfigParser
+from functools import wraps
+import jwt
+from flask import Flask, request, jsonify, make_response
+from flask_marshmallow import Marshmallow
+from flask_sqlalchemy import SQLAlchemy
 
 parser = SafeConfigParser()
 parser.read('config.ini')  # You must Create config.ini file in this same directory
