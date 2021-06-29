@@ -1,14 +1,14 @@
 import datetime
 import os
 import uuid
-from configparser import SafeConfigParser
+import configparser
 from functools import wraps
 import jwt
 from flask import Flask, request, jsonify, make_response
 from flask_marshmallow import Marshmallow
 from flask_sqlalchemy import SQLAlchemy
 
-parser = SafeConfigParser()
+parser = configparser.ConfigParser()
 parser.read('config.ini')  # You must Create config.ini file in this same directory
 
 
