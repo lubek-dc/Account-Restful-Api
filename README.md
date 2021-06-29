@@ -9,7 +9,7 @@
 * First you need to clone repo via: 
 
 ` git clone  --recursive https://github.com/lubek-dc/Account-Restful-Api.git `
-* Then you need to create config.ini file in directory and type in
+* Then you need to create config.ini file in repo direcory and type in
 
 ```ini
 [SECURITY]
