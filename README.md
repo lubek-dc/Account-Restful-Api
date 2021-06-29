@@ -2,7 +2,8 @@
 ![console](https://user-images.githubusercontent.com/32651459/123863495-f5767600-d929-11eb-92e1-1baf468b51e8.png)
 
 ## Main Features:
-* Something
+* SQLITE Database support
+* Account system (Basic Authentication)
 
 ## Setup
 * First you need to clone repo via: 
