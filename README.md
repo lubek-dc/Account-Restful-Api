@@ -7,10 +7,10 @@
 ## Setup
 * First you need to clone repo via: 
 
-` $ git clone  --recursive https://github.com/lubek-dc/Account-Restful-Api.git `
+```py $ git clone  --recursive https://github.com/lubek-dc/Account-Restful-Api.git ```
 * Then you need to install dependecies via: 
 
-` $ pip install flask flask_sqlalchemy flask_marshmallow werkzeug uuid jwt datetime functools configparser `
+```py $ pip install flask flask_sqlalchemy flask_marshmallow werkzeug uuid jwt datetime functools configparser ```
 
 # Dependencies:
 ## Main:
