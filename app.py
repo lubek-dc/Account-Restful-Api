@@ -11,7 +11,7 @@ from functools import wraps
 from configparser import SafeConfigParser
 
 parser = SafeConfigParser()
-parser.read('config.ini') # You must Create config.ini file in this same directory
+parser.read('config.ini')  # You must Create config.ini file in this same directory
 
 # config.ini file:
 # [SECURITY]
@@ -21,10 +21,10 @@ parser.read('config.ini') # You must Create config.ini file in this same directo
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
 # Database
-app.config['SECRET_KEY'] = parser.get('SECURITY','SECRET_KEY')
+app.config['SECRET_KEY'] = parser.get('SECURITY', 'SECRET_KEY')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'db.sqlite')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-secret_key = parser.get('SECURITY','SECRET_KEY')
+secret_key = parser.get('SECURITY', 'SECRET_KEY')
 # Initialize Database
 db = SQLAlchemy(app)
 # Initialize Marshmallow
@@ -67,6 +67,8 @@ def token_required(f):
         return f(current_user, *args, **kwargs)
 
     return decorator
+
+
 def admin_required(f):
     @wraps(f)
     def decorator(*args, **kwargs):
@@ -81,7 +83,7 @@ def admin_required(f):
         try:
             data = jwt.decode(token, secret_key)
             current_user = Users.query.filter_by(public_id=data['public_id']).first()
-            if current_user.admin == False:
+            if current_user.admin is False:
                 return jsonify({'message': 'Restricted area you must be admin'})
         except:
             return jsonify({'message': 'token is invalid'})
@@ -124,7 +126,7 @@ def login_user():
 
     if user.password == auth.password:
         token = jwt.encode(
-            {'public_id': user.public_id,'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=30)},
+            {'public_id': user.public_id, 'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=30)},
             app.config['SECRET_KEY'])
         return jsonify({'token': token.decode('UTF-8')})
 
