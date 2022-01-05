@@ -17,12 +17,13 @@ SECRET_KEY: Your Secret Key
 ```
 
 ### Installing dependecies
+To install dependencies you must just type this command:
 
-`
-$ pip install -r requirments.txt 
+* ```$ pip install -r requirments.txt``` 
+
 (cmd must be opened in the repo folder too)
-`
-## And the last step is Creating database 
+
+### And the last step is Creating database 
 
 * Open Repo in terminal or CMD
 
