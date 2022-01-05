@@ -16,7 +16,13 @@
 SECRET_KEY: Your Secret Key (Can be anything for example ThisIsSecret)
 ```
 
-## Creating database 
+### Installing dependecies
+
+`
+$ pip install -r requirments.txt 
+(cmd must be opened in the repo folder too)
+`
+## And the last step is Creating database 
 
 * Open Repo in terminal or CMD
 
@@ -26,13 +32,6 @@ SECRET_KEY: Your Secret Key (Can be anything for example ThisIsSecret)
     * `>>> from app import db`
 
     * `>>> db.create_all()`
-### The last step is installing dependecies via: 
-
-`
-$ pip install -r requirments.txt 
-(cmd must be opened in the repo folder too)
-`
-
 And u are done to start programming
 # Dependencies:
 ## Main:
