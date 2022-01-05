@@ -19,7 +19,7 @@ SECRET_KEY: Your Secret Key
 ### Installing dependecies
 To install dependencies you must just type this command:
 
-* ```$ pip install -r requirments.txt``` 
+* ```$ pip install -r requirements.txt``` 
 
 (cmd must be opened in the repo folder too)
 
