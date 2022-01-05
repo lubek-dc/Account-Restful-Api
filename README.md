@@ -10,10 +10,10 @@
 
 ` git clone  --recursive https://github.com/lubek-dc/Account-Restful-Api.git `
 * Then you need to create config.ini file in repo direcory and type in
-
+ (Secret key be anything for example ThisIsSecret This key is using to encode data and decode data)
 ```ini
 [SECURITY]
-SECRET_KEY: Your Secret Key (Can be anything for example ThisIsSecret)
+SECRET_KEY: Your Secret Key
 ```
 
 ### Installing dependecies
